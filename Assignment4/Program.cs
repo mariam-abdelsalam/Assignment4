@@ -14,16 +14,22 @@
         //    Console.WriteLine(prices[1]);
         //}
 
-            //Q2
-        {
-            int[,] shelfCopies =
-            {
-            { 3, 5 },
-            { 1, 4 }
-        };
+        //    //Q2
+        //{
+        //    int[,] shelfCopies =
+        //    {
+        //    { 3, 5 },
+        //    { 1, 4 }
+        //};
 
-            Console.WriteLine(shelfCopies[1, 0]);
-        }
+        //    //    Console.WriteLine(shelfCopies[1, 0]);
+        //    }
+        //}
+        Console.WriteLine("Welcome to the Library!");
     }
-}
+
+    static void Main()
+        {
+            PrintWelcomeMessage();
+        }
 }
