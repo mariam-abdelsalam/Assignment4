@@ -25,19 +25,32 @@
         //    //    Console.WriteLine(shelfCopies[1, 0]);
         //    }
         //}
-        Console.WriteLine("Welcome to the Library!");
+        //        Console.WriteLine("Welcome to the Library!");
+        //    }
+
+        //    static void Main()
+        //        {
+        //            PrintWelcomeMessage();
+        //        }
+
+        //        //Q4
+        //    }
+        //    Console.WriteLine("Book title: " + title);
+        //    }
+
+        //    static void Main()
+        //{
+        //    PrintBookTitle("Clean Code");
+
+        //Q5
+
+        pages += 50;
     }
 
     static void Main()
         {
-            PrintWelcomeMessage();
-        }
+            int pages = 400;
 
-        //Q4
-    }
-    Console.WriteLine("Book title: " + title);
-    }
+            AddBonusPages(pages);
 
-    static void Main()
-{
-    PrintBookTitle("Clean Code");
+            Console.WriteLine(pages);
