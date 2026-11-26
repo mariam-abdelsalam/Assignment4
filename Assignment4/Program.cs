@@ -102,31 +102,48 @@
 //Q9
 using System;
 
+//class Program
+//    {
+//        static bool TryGetPrice(string title, out double price)
+//        {
+//            if (title == "Clean Code")
+//            {
+//                price = 25.5;
+//                return true;
+//            }
+
+//            price = 0;
+//            return false;
+//        }
+
+//        static void Main()
+//        {
+//            double price;
+
+//            if (TryGetPrice("Clean Code", out price))
+//            {
+//                Console.WriteLine(price);
+//            }
+//            else
+//            {
+//                Console.WriteLine("Book not found");
+//            }
+//        }
+//    }
+
+    //Q10
+    using System;
+
 class Program
     {
-        static bool TryGetPrice(string title, out double price)
+        static void PrintBookInfo(string title, int pages = 300)
         {
-            if (title == "Clean Code")
-            {
-                price = 25.5;
-                return true;
-            }
-
-            price = 0;
-            return false;
+            Console.WriteLine($"Title: {title}, Pages: {pages}");
         }
 
         static void Main()
         {
-            double price;
-
-            if (TryGetPrice("Clean Code", out price))
-            {
-                Console.WriteLine(price);
-            }
-            else
-            {
-                Console.WriteLine("Book not found");
-            }
+            PrintBookInfo("Clean Code");
+            PrintBookInfo("C# in Depth", 900);
         }
     }
