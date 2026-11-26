@@ -57,13 +57,29 @@
         //        Console.WriteLine(pages);
 
         //Q6
-        prices[0] -= 5;
-    }
+        //    prices[0] -= 5;
+        //}
 
-    static void Main()
+        //static void Main()
+        //    {
+        //        double[] prices = { 25.5, 40.0 };
+
+        //        ApplyDiscount(prices);
+
+        //        Console.WriteLine(prices[0]);
+
+
+        //Q7
+        static void AddBonusPagesByRef(ref int pages)
         {
-            double[] prices = { 25.5, 40.0 };
+            pages += 50;
+        }
 
-            ApplyDiscount(prices);
+        static void Main()
+        {
+            int pages = 400;
 
-            Console.WriteLine(prices[0]);
+            AddBonusPagesByRef(ref pages);
+
+            Console.WriteLine(pages);
+        }
