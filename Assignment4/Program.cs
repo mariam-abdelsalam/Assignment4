@@ -32,4 +32,12 @@
         {
             PrintWelcomeMessage();
         }
-}
+
+        //Q4
+    }
+    Console.WriteLine("Book title: " + title);
+    }
+
+    static void Main()
+{
+    PrintBookTitle("Clean Code");
