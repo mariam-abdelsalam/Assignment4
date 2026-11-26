@@ -44,13 +44,26 @@
 
         //Q5
 
-        pages += 50;
+        //    pages += 50;
+        //}
+
+        //static void Main()
+        //    {
+        //        int pages = 400;
+
+        //        AddBonusPages(pages);
+
+
+        //        Console.WriteLine(pages);
+
+        //Q6
+        prices[0] -= 5;
     }
 
     static void Main()
         {
-            int pages = 400;
+            double[] prices = { 25.5, 40.0 };
 
-            AddBonusPages(pages);
+            ApplyDiscount(prices);
 
-            Console.WriteLine(pages);
+            Console.WriteLine(prices[0]);
