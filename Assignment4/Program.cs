@@ -69,17 +69,32 @@
         //        Console.WriteLine(prices[0]);
 
 
-        //Q7
-        static void AddBonusPagesByRef(ref int pages)
+        ////Q7
+        //static void AddBonusPagesByRef(ref int pages)
+        //{
+        //    pages += 50;
+        //}
+
+        //static void Main()
+        //{
+        //    int pages = 400;
+
+        //    AddBonusPagesByRef(ref pages);
+
+        //    Console.WriteLine(pages);
+        //}
+
+        //Q8    static void ReplaceArray(ref double[] prices)
+    {
+        prices = new double[] { 10.0, 12.5, 15.0 };
+    }
+
+    static void Main()
         {
-            pages += 50;
+            double[] prices = { 25.5, 40.0 };
+
+            ReplaceArray(ref prices);
+
+            Console.WriteLine(prices.Length);
         }
-
-        static void Main()
-        {
-            int pages = 400;
-
-            AddBonusPagesByRef(ref pages);
-
-            Console.WriteLine(pages);
-        }
+    }
